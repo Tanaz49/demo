@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form onsubmit="return data()" action="abc.html">
+            Username:<input type="text" id="n1"> <br> <br>
+            <span id="message" style="color: red;"></span> <br> <br>
+            Password:<input type="password" id="n2"> <br> <br>
+            <span id="message2" style="color: red;"></span> <br> <br>
+            <input type="submit" value="Login">
+    </form>  
+
+    <script>
+       function data() 
+       {
+        var a=document.getElementById("n1").value;
+        var b=document.getElementById("n2").value;
+
+        if(a==""||b=="")
+            {
+                // alert("All Fileds are mandtory");
+                let d = document.getElementById("message")
+                d.innerHTML="Please filed username";
+                return false;
+            }
+
+           else if(b.length<5||b.length>5)
+            {
+                // alert("password maximum length is 5 digit");
+                let f = document.getElementById("message2")
+                f.innerHTML="Please filed password";
+                return false;
+            }
+
+            else {
+                true; //field blank this use condition 
+            }
+        }
+    </script>
+    
+</body>
+</html>

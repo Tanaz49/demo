@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form> 
+        <input type="text" id="input1" onblur="upperdata()" placeholder="CAPITAL LETTERS ONLY">
+        <input type="text" id="input2" onblur="upperdata()" placeholder="small letters ONLY">
+    </form>
+  
+    <script>
+        function upperdata() 
+        {
+            var a=document.getElementById("input1");  // add small text then click outside show captial
+            a.value=a.value.toUpperCase();  
+           
+           var b=document.getElementById("input2"); // add small or captial text then click outside show lowercase text
+           b.value=b.value.toLowerCase(); 
+        }
+    </script>
+</body>
+</html>

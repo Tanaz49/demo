@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        body {
+            margin: 0;
+        }
+        .slide-container {
+            position: relative;
+            width: 100%;
+        }
+        .slide img {
+            width: 100%;
+        }
+
+        .arrow {
+            cursor: pointer;
+            position: absolute;
+            top: 45%;
+            color: red;
+            background-color: white;
+            padding: 8px 18px;
+            border-radius: 50%;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .caption {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.615);
+            padding: 15px 0;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <section>
+        <div class="slide-container">
+
+            <!-- <div class="slide">
+                <img src="https://picsum.photos/id/237/1000/400" alt="">
+                <div class="caption">Caption text1</div>
+            </div> -->
+    
+            <!-- <div class="slide">
+                <img src="https://picsum.photos/id/247/1000/400" alt="">
+                <div class="caption">Caption text2</div>
+            </div>
+    
+            <div class="slide">
+                <img src="https://picsum.photos/id/837/1000/400" alt="">
+                <div class="caption">Caption text3</div>
+            </div>
+    
+    
+            <div class="slide">
+                <img src="https://picsum.photos/id/937/1000/400" alt="">
+                <div class="caption">Caption text4</div>
+            </div> -->
+    
+            <span class="arrow prev">&#10094;</span>
+            <span class="arrow next">&#10095;</span>
+    
+         </div>
+    
+    </section>
+     
+     <script>
+        slideshow(); // funcation call
+            function slideshow() { 
+                let slides = document.getElementsByClassName('slide'); //create selector
+                console.log(slides);
+            }
+     </script>
+
+</body>
+</html>

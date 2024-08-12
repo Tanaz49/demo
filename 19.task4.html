@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function rangeInclusive(a, b) {
+        if ((a >= 50 && a <= 99) || (b >= 50 && b <= 99)) return true;
+        else return false;
+      }
+
+      console.log(rangeInclusive(50, 1));
+      console.log(rangeInclusive(55, 65));
+      console.log(rangeInclusive(40, 99));
+      console.log(rangeInclusive(10, 9));
+      console.log(rangeInclusive(3, 2));
+    </script>
+  </body>
+</html>
